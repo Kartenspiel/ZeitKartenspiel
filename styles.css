@@ -6,12 +6,16 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .button-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
+    width: 90%;
+    max-width: 800px;
 }
 
 button {
@@ -23,6 +27,7 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button:hover {
@@ -39,8 +44,20 @@ button:hover {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 #resetButton:hover {
     background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 16px;
+        padding: 15px;
+    }
+    #resetButton {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
