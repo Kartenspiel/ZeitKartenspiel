@@ -14,7 +14,6 @@ const soundFiles = [
         'Upps! Die Pannenshow Intro.mp3',
         'GZSZ Logo 1992.mp3'
 
-
     ]
     // Pllay
 function playSound(buttonNumber) {
