@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Waka Waka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="audio-controls">
+        <audio id="audioPlayer" src="sounds/sfx_windowsxp.wav"></audio>
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="replayAudio()">Replay</button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume()">
+    </div>
+    <script src="script_audio.js"></script>
+</body>
+
+</html>
